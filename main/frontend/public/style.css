@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    font-family: Helvetica, serif;
+    /*background-color: #1f2560;*/
+}
+
+img {
+    border-radius: 50%;
+}
+
+.main_home {
+    background: linear-gradient(100grad, #937ea2, #1f2560);
+}
+
+.navbar a.right {
+    float: right;
+    display: block;
+    color: #1f2560;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    overflow: visible;
+    background-color: white;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: #1f2560;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+    /*margin-left: 20px;*/
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #1f2560;
+    padding: 20px 46px;
+    background-color: inherit;
+    font-family: inherit;
+}
+
+.navbar a:hover {
+    background-color: #937ea2;
+    color: white;
+}
+
+.navbar a.right:hover {
+    background-color: #353b7e;
+    color: white;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #353b7e;
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #c0bfbf;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*https://freefrontend.com/css-text-effects/*/
+.titleText {
+    font-size: 150px;
+    text-transform: uppercase;
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: -3px;
+    transition: 700ms ease;
+    font-variation-settings: "wght" 311;
+    color: white;
+    outline: none;
+    text-align: center;
+    padding-top: 200px;
+    text-shadow: 2px 2px 50px rgb(20, 18, 32);
+}
+
+.titleText:hover {
+    font-variation-settings: "wght" 582;
+    letter-spacing: 20px;
+}
+
+.slideshow_container {
+    width: 85%;
+    padding-top: 60px;
+    padding-bottom: 150px;
+    margin: 0 auto;
+}
+
+.main_company_postjob {
+    font-family: Arial, serif;
+    background: linear-gradient(100grad, #bda7cb, #6f7ca2);
+}
+
+.job_form {
+    max-width: 500px;
+    max-height: 600px;
+    margin: auto;
+    padding: 20px 30px;
+    background: #f6f6f8;
+    border-radius: 8px;
+    color: black;
+}
+
+.form {
+    padding-top: 140px;
+    padding-bottom: 30px
+}
+
+.button {
+    background-color: white;
+    border: none;
+    color: #1f2560;
+    padding: 6px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 7px;
+    transition-duration: 0.4s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.10), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #444660;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.45), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.main_otherinfo {
+    font-family: Arial, serif;
+    padding-top: 80px;
+    padding-bottom: 210px;
+}
+
+
+.center{
+    position:absolute;
+    top:75%;
+    left:50%;
+    transform:perspective(500px) translate(-50%,-50%);
+    transform:skewY(15deg);
+    transition:0.5s;
+    font-size: 4px;
+}
+
+.center:hover{
+    transform:perspective(500px) translate(-50%,-50%);
+    transform:skewY(0deg);
+}
+
+.center h1 span{
+    position:absolute;
+    top:0;
+    left:0;
+    transform:translate(-50%,-50%);
+    margin:0;
+    padding:0;
+    text-transform:uppercase;
+    font-size:4.5em;
+    color:white;
+    transform-style:preserve-3d;
+    transition:0.8s;
+}
+
+.center h1 span:nth-child(1){
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+}
+
+.center h1 span:nth-child(2){
+    color:#907abc;
+    transform:translate(-50%,-50%) skewX(-60deg);
+    left:-38px;
+    clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
+}
+
+.center h1 span:nth-child(3){
+    transform:translate(-50%,-50%) skewY(0deg);
+    left:-76px;
+    clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%);
+}
+
+.center:hover h1 span:nth-child(2),
+.center:hover h1 span:nth-child(3){
+    transform:translate(-50%,-50%) skewX(0deg);
+    left:0;
+    color:white;
+}
